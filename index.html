@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-300">
+    <header>
+        <nav class="h-[10vh] w-[100vw] flex justify-center items-center bg-gray-800 text-white">
+            <div class="h-[10vh] w-[15%] flex justify-center items-center">
+                <h1 class="text-2xl"><i class="fa-brands fa-google fa-2x"></i>
+                </h1>
+            </div>
+
+            <div class="h-[10vh] w-[60%]">
+                <ul class="h-[10vh] w-[100%] flex justify-center items-center gap-10">
+                    <li class="hover:bg-slate-200 hover:text-black p-2 rounded-lg hover:cursor-pointer">Home</li>
+                    <li class="hover:bg-slate-200 hover:text-black p-2 rounded-lg hover:cursor-pointer">Services</li>
+                    <li class="hover:bg-slate-200 hover:text-black p-2 rounded-lg hover:cursor-pointer">About us</li>
+                    <li class="hover:bg-slate-200 hover:text-black p-2 rounded-lg hover:cursor-pointer">Contact</li>
+                </ul>
+            </div>
+
+            <div class="h-[10vh] w-[20%] flex justify-center items-center gap-6">
+
+                <span><i
+                        class="fa-solid fa-user fa-2x hover:bg-slate-200 hover:text-black p-1 rounded-md hover:cursor-pointer"></i></span>
+                <span><i
+                        class="fa-solid fa-gear fa-2x hover:bg-slate-200 hover:text-black p-1 rounded-md hover:cursor-pointer"></i></span>
+                <span><i
+                        class="fa-solid fa-ellipsis fa-2x hover:bg-slate-200 hover:text-black p-1 rounded-md hover:cursor-pointer"></i></span>
+                <span><i
+                        class="fa-solid fa-envelope fa-2x hover:bg-slate-200 hover:text-black p-1 rounded-md hover:cursor-pointer"></i></span>
+            </div>
+        </nav>
+
+
+
+        <main>
+            <div class="h-[70vh] w-[100vw] flex justify-center items-center flex-col">
+                <img src="google.png" class=""> <!-- Reduced the bottom margin -->
+
+                <!-- <h1 class="text-8xl my-7 text-pink-400 font-medium">Google</h1> -->
+                <div class="relative flex items-center w-full max-w-2xl justify-center">
+                    <input class="m-1 p-3 bg-white text-black rounded-2xl outline-none w-full"
+                        placeholder="Search for google or type a URL" type="text" id="userSearch" />
+                    <button class="absolute right-4 text-xl flex items-center gap-4">
+                        <i class="fa-solid fa-magnifying-glass fa-1x" id="searchBtn"></i>
+                        <i class="fa-solid fa-microphone"></i>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+
+
+
+    </header>
+    <section>
+        <div id="result">
+
+        </div>
+    </section>
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/3db204eb5f.js" crossorigin="anonymous"></script>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
